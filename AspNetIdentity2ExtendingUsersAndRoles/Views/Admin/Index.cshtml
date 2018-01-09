@@ -1,0 +1,21 @@
+﻿@using DAL
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<center>
+    <div id="cars_list">
+        @Html.Action("GetTable")
+    </div>
+</center>
+
+<script>
+    $('#PagesOn').on('change', function () {
+        var url = "/Admin/GetTable";
+        var n = $(this).val();
+        $.get(url, { g: n }).done(function (data) {
+            $('#cars_list').html(data);
+        });
+    })
+</script>
