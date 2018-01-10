@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace AspNetIdentity2ExtendingUsersAndRoles.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class AdminController : Controller
     {
         static int carsOnPage = 3;

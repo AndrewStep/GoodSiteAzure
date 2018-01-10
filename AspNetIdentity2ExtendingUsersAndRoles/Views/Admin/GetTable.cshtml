@@ -58,13 +58,13 @@
         }
     </tbody>
 </table>
-@*<center>
+<center>
     <div>
         @for (int i = 0; i < ViewBag.PageCount; i++)
             {
-            @Ajax.ActionLink($"{@i + 1}", "GetTable", new { id = i + 1 }, new AjaxOptions { UpdateTargetId = "cars_list" }, new { @class = "btn btn-outline-secondary" })
+            @Ajax.ActionLink($"{@i + 1}", "GetTable", new { id = @i + 1 }, new AjaxOptions { UpdateTargetId = "cars_list" }, new { @class = "btn btn-outline-secondary" })
         }
     </div>
-</center>*@
+</center>
 
 
