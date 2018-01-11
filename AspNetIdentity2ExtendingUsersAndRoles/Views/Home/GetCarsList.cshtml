@@ -1,0 +1,27 @@
+﻿<style>
+    .layer1 {
+        position: relative; /* Относительное позиционирование */
+    }
+
+    .layer2 {
+        position: absolute; /* Абсолютное позиционирование */
+        bottom: 100px; /* Положение от нижнего края */
+        right: 0px; /* Положение от правого края */
+        line-height: 1px;
+    }
+</style>
+@foreach (var s in Model)
+{
+    <div class="card mb-3" style="width: 20rem;">
+        <img class="card-img-top" src="@s.CarImage" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title">@s.Category</h4>
+            <p class="card-text">Модель: @s.CarName   Цвет: @s.Color</p>
+            <p class="card-text">Возраст: @s.Age    Цена:@s.Price</p>
+            @*@Html.ActionLink("В корзину", "Index", "Backet", null, new { @class = "badge badge-pill badge-info" })*@
+        </div>
+    </div>
+}
+
+
+

@@ -2,14 +2,14 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+@*<div class="jumbotron">
     <h1>ASP.NET Identity</h1>
     <p class="lead">ASP.NET Identity is the membership system for ASP.NET apps. Following are the features of ASP.NET Identity in this sample application.</p>
     <p><a href="http://www.asp.net/identity" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+</div>*@
 
 <div class="row">
-    <div class="col-md-4">
+    @*<div class="col-md-4">
         <dl>
             <dt>Initialize ASP.NET Identity</dt>
             <dd>
@@ -25,8 +25,8 @@
                 </ul>
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Add profile data for the user</dt>
             <dd>
@@ -38,8 +38,8 @@
                 </ul>
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Validation</dt>
             <dd>
@@ -48,8 +48,8 @@
                 or you can write your own custom validators and register them with the UserManager.
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Register a user and login</dt>
             <dd>
@@ -57,8 +57,8 @@
                 Click @Html.ActionLink("Log in", "Login", "Account") and see the code in AccountController.cs and Login Action.
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Social Logins</dt>
             <dd>
@@ -75,8 +75,8 @@
                 </ul>
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Basic User Management</dt>
             <dd>
@@ -94,8 +94,8 @@
                 Only Users In Role Admin can access this page. This authorization is doen by using the [Authorize(Roles = "Admin")] on the RolesAdmin controller.
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Account Confirmation</dt>
             <dd>
@@ -105,8 +105,8 @@
                 You can send email using the EmailService which is registered in App_Start\IdentityConfig.cs
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Two-Factor Authentication</dt>
             <dd>
@@ -150,8 +150,8 @@
                 </ul>
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Account Lockout</dt>
             <dd>
@@ -178,8 +178,8 @@
                 </ul>
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Password Reset</dt>
             <dd>
@@ -204,8 +204,8 @@
                 </ul>
             </dd>
         </dl>
-    </div>
-    <div class="col-md-4">
+    </div>*@
+    @*<div class="col-md-4">
         <dl>
             <dt>Documentation</dt>
             <dd>
@@ -229,8 +229,8 @@
             </dd>
         </dl>
 
-    </div>
-    @*<div class="col-md-4">
-        @Html.Action("GetCarsList")
     </div>*@
+    <div class="col-md-4">
+        @Html.Action("GetCarsList")
+    </div>
 </div>
