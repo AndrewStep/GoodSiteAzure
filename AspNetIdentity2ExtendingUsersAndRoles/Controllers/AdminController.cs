@@ -27,7 +27,7 @@ namespace AspNetIdentity2ExtendingUsersAndRoles.Controllers
             return View();
         }
 
-        public ActionResult Add(int id)
+        public ActionResult Add(int id=0)
         {
             CARSINFO c = null;
             if (id != 0)
@@ -41,7 +41,7 @@ namespace AspNetIdentity2ExtendingUsersAndRoles.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.CARSINFO.Add(c);
+                context.CARSINFO.AddOrUpdate(c);
                 context.SaveChanges();
                 return RedirectToAction("Index");
             }

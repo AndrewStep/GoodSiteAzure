@@ -17,6 +17,10 @@ namespace DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CARSINFO>()
+                .Property(e => e.CarImage)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CARSINFO>()
                 .Property(e => e.Category)
                 .IsUnicode(false);
 
@@ -26,10 +30,6 @@ namespace DAL
 
             modelBuilder.Entity<CARSINFO>()
                 .Property(e => e.Color)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<CARSINFO>()
-                .Property(e => e.CarImage)
                 .IsUnicode(false);
         }
     }
